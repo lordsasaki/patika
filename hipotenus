@@ -1,0 +1,24 @@
+package giris;
+
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+
+
+public class hipotenus {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		int a,b;
+		
+		System.out.print("1. kenar uzunlugunu giriniz :");
+		a = input.nextInt();
+		
+		System.out.print("2. kenar uzunlugunu giriniz :");
+		b = input.nextInt();
+		
+		double c = Math.sqrt(a*a+b*b);
+		
+		System.out.println("hipotenis uzunlugu: "+c);
+		
+	}
+}
