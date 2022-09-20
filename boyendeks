@@ -1,0 +1,20 @@
+package giris;
+
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+
+
+public class deneme {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz: ");
+		double boy = input.nextDouble();
+		
+		System.out.print("Lütfen kilonuzu giriniz: ");
+		int kilo = input.nextInt();
+		
+		System.out.println("Vucut kitle endeksiniz: "+kilo/(boy*boy));
+	}
+	
+}
