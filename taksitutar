@@ -1,0 +1,22 @@
+package giris;
+
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+
+
+public class taksitutar {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("kac km yolculuk yaptiniz : ");
+		int km = input.nextInt();
+		
+		double tutar = km*2.20+km+10;
+		
+		if(tutar<20)
+			System.out.print("ucret 20 tl");
+		else {
+			System.out.println("ucret "+tutar+" tl");
+		}
+	}
+}
