@@ -1,0 +1,29 @@
+package giris;
+
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+
+
+public class kdvhesap {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		double tutar, kdvOran;
+		System.out.print("Ucret tutarını giris yapınız: ");
+		tutar = input.nextDouble();
+		
+		if(tutar >=1000)
+		{
+			kdvOran = 0.08;
+			System.out.println("kdvsiz fiyat: "+tutar);
+			System.out.println("kdv tutar: "+kdvOran*tutar);
+			System.out.println("kdvli tutar: "+(tutar + kdvOran*tutar));
+		}
+		else {
+			kdvOran = 0.18;
+			System.out.println("kdvsiz fiyat: "+tutar);
+			System.out.println("kdv tutar: "+kdvOran*tutar);
+			System.out.println("kdvli tutar: "+(tutar+kdvOran*tutar));
+		}
+	}
+}
