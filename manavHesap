@@ -1,0 +1,38 @@
+package giris;
+
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+
+
+public class deneme {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		double armutFiyat =2.14,elmaFiyat=3.67,domatesFiyat =1.11
+				,muzFiyat=0.95,patlicanFiyat=5.0;
+		
+		System.out.print("Armut kac kilo: ");
+		int armutKilo = input.nextInt(); 
+		
+		System.out.print("Patlican kac kilo: ");
+		int patlicanKilo = input.nextInt(); 
+		
+		System.out.print("Domates kac kilo: ");
+		int domatesKilo = input.nextInt();
+		
+		System.out.print("Muz kac kilo: ");
+		int muzKilo = input.nextInt();
+		
+		System.out.print("Elma kac kilo: ");
+		int elmaKilo = input.nextInt();
+		
+		double tutar = armutFiyat*armutKilo+ muzFiyat*muzKilo+patlicanFiyat*patlicanKilo
+				+domatesFiyat*domatesFiyat+elmaFiyat*elmaKilo;
+				
+		
+		System.out.println("toplam tutar:"+tutar);
+		
+		
+	}
+	
+}
