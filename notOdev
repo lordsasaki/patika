@@ -8,19 +8,19 @@ public class Main {
 		double ort =0;
 		int sayac =5;
 		
-		System.out.println("Matematik notunu giriniz: ");
+		System.out.print("Matematik notunu giriniz: ");
 		int matNot = scan.nextInt();
 		
-		System.out.println("Fizik notunu giriniz: ");
+		System.out.print("Fizik notunu giriniz: ");
 		int fizikNot = scan.nextInt();
 		
-		System.out.println("Turkce notunu giriniz: ");
+		System.out.print("Turkce notunu giriniz: ");
 		int turkceNot = scan.nextInt();
 		
-		System.out.println("Kimya notunu giriniz: ");
+		System.out.print("Kimya notunu giriniz: ");
 		int kimyaNot = scan.nextInt();
 		
-		System.out.println("Muzik notunu giriniz: ");
+		System.out.print("Muzik notunu giriniz: ");
 		int muzikNot = scan.nextInt();
 		
 		scan.close();
@@ -49,9 +49,13 @@ public class Main {
 			sayac--;
 		else 
 			ort += kimyaNot;
+		double sonuc = ort/sayac;
 		
-		
-		System.out.println("Ortalama: "+ort/sayac);
+		if(sonuc<55){
+			System.out.print("Kaldiniz!");
+		}
+		else
+			System.out.print("Gectiniz");
 		
 	}
 }
