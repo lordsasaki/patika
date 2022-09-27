@@ -1,0 +1,17 @@
+package projeler;
+
+public class recursiveFib {
+	
+	static int recursiveFibanocci(int number) {
+		if(number==0 || number ==1)
+			return 1;
+		
+		return recursiveFibanocci(number-1)+recursiveFibanocci(number-2);
+	}
+
+	public static void main(String[] args) {
+	int result =	recursiveFibanocci(5);
+	System.out.println(result);
+	}
+
+}
