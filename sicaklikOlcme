@@ -1,0 +1,22 @@
+package projeler;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scan =new Scanner(System.in);
+		System.out.print("Sıcaklık giriniz: ");
+		int sicaklik = scan.nextInt();
+		
+		if(sicaklik<5)
+			System.out.print("Kayak Yapabilirsiniz!");
+		else if(5<sicaklik && sicaklik<15)
+			System.out.print("Sinema Yapabilirsiniz!");
+		else if(15<sicaklik && sicaklik<25)
+			System.out.print("Sinema Yapabilirsiniz!");
+		else if(sicaklik>25)
+			System.out.print("Yüzme Yapabilirsiniz!");
+		else 
+			System.out.print("Hatali Deger Girdiniz!");
+		}
+}
