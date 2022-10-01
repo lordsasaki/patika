@@ -1,0 +1,18 @@
+package projeler;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Yil Giriniz: ");
+		int yil = scan.nextInt();
+		
+		if((yil%4==0) && (yil%100!= 0) || (yil%400 ==0))
+			System.out.print("Artik yildir!");
+		else {
+			System.out.print("Artik Yil Degildir!");
+		}
+	}
+}
