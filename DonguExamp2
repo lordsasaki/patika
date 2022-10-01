@@ -1,0 +1,21 @@
+package projeler;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		int kuvvetDort =1;
+		int kuvvetBes = 1;
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Sayi gir: ");
+		int sayi = scan.nextInt();
+		
+		for (int i = 1; i <= sayi; i++) {
+		
+			kuvvetBes *=5;
+			kuvvetDort *=4;
+		}
+		System.out.println("4^"+ sayi +": "+kuvvetDort);
+		System.out.print("5^"+ sayi +": "+kuvvetBes);
+	}
+}
