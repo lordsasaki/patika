@@ -1,0 +1,14 @@
+package projeler;
+
+public class Main {
+	static int fakHesap(int taban,int ust)
+	 {
+		if(taban ==1 | ust ==0)
+			return 1;
+		return fakHesap(taban, ust-1)*taban;
+			
+	 }
+	public static void main(String[] args) {
+		System.out.println(fakHesap(5, 2));
+	}
+}
