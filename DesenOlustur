@@ -1,0 +1,16 @@
+package projeler;
+
+public class Main {
+	static void desenOlustur(int n) {
+		System.out.println(n);
+		if(n>0)
+		{
+			desenOlustur(n-5);
+			System.out.println(n);
+		}
+	}
+	
+	public static void main(String[] args) {
+		desenOlustur(10);
+	}
+}
