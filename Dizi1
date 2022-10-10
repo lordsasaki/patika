@@ -1,0 +1,28 @@
+package projeler;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int enBuyuk=1,EnKucuk=1;
+		int dizi[] = {8,-96,245,31,22,0,-24};
+		Arrays.sort(dizi);
+		System.out.println(Arrays.toString(dizi));
+		System.out.print("Sayi gir: ");
+		int sayi = scan.nextInt();
+		
+		for(int i =0;i<dizi.length;i++)
+		{
+			if(sayi<dizi[i]) {
+				enBuyuk = dizi[i];
+				EnKucuk = dizi[i-1];
+				break;
+			}
+		}
+		System.out.println("Girilen sayiyan yakin en buyuk: "+enBuyuk+"\nGirilen sayiyan yakin en kucuk"
+				+ EnKucuk);
+		
+	}
+}
