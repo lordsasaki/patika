@@ -1,0 +1,13 @@
+package projeler;
+
+public class Main {
+	public static void main(String[] args) {
+		int dizi[] = {1,2,3,4,5};
+		double toplam =1;
+		for(int i =0;i<dizi.length;i++)
+		{
+			toplam += 1/dizi[i];
+		}
+		System.out.println("Sonuc : "+dizi.length/toplam);
+	}
+}
