@@ -1,0 +1,25 @@
+package projeler;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+	Scanner scan = new Scanner(System.in);
+	System.out.print("Sayi gir: ");
+	int sayi = scan.nextInt();
+	boolean kontrol;
+	
+	for(int i =2;i<sayi;i++)
+	{
+		kontrol = true;
+		for(int j =2;j<i;j++)
+			{
+				if(i%j==0)
+					kontrol = false;
+			}
+		if(kontrol==true)
+			System.out.print(i+",");
+	}		
+}
+}
