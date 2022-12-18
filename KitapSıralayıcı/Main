@@ -1,0 +1,45 @@
+package Book;
+
+import java.util.Comparator;
+import java.util.TreeSet;
+
+public class Main {
+
+	public static void main(String[] args) {
+		TreeSet<Book> books = new TreeSet<>();
+		Book book1 = new Book("Gulun adi", 384, "Umberto Eco ", 1985);
+		Book book2 = new Book("1984", 446, "Orwell", 1983);
+		Book book3 = new Book("Ezbere Yasayanlar", 384, "Emrah Safa", 1985);
+		Book book4 = new Book("Siyah Lale", 286, "Dumas", 2004);
+		Book book5 = new Book("Ben Robot", 984, "Asimov", 1971);
+
+		books.add(book1);
+		books.add(book2);
+		books.add(book3);
+		books.add(book4);
+		books.add(book5);
+
+		for (Book book : books) {
+			System.out.println(book.getBookName() + "," + book.getAuthorName() + "," + book.getPageNumber() + ","
+					+ book.getReleaseYear());
+		}
+		TreeSet<Book> bk2 = new TreeSet<>(new Comparator<Book>() {
+			@Override
+			public int compare(Book o1, Book o2) {
+				return o1.getPageNumber() - o2.getPageNumber();
+			}
+		});
+		System.out.println("*******************");
+		bk2.add(book1);
+		bk2.add(book2);
+		bk2.add(book3);
+		bk2.add(book4);
+		bk2.add(book5);
+
+		for (Book book : bk2) {
+			System.out.println(book.getPageNumber() + "," + book.getAuthorName() + "," + book.getBookName() + ","
+					+ book.getReleaseYear());
+		}
+
+	}
+}
