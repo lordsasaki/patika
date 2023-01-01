@@ -1,0 +1,13 @@
+package Fikstr;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Teams teams = new Teams();
+		teams.teamName.add("Liverpool");
+		teams.teamName.add("Manchester City");
+		teams.teamName.add("FC Barcelona");
+
+		teams.leagueFixture();
+	}
+}
