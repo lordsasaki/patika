@@ -1,0 +1,45 @@
+public class Book {
+    private String bookName;
+    private int bookPage;
+    private String bookWriter;
+    private String releaseDate;
+
+    public Book(String bookName,int bookPage, String bookWriter,String releaseDate){
+        this.bookName = bookName;
+        this.bookPage = bookPage;
+        this.bookWriter = bookWriter;
+        this.releaseDate = releaseDate;
+    }
+
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
+    public void setBookPage(int bookPage) {
+        this.bookPage = bookPage;
+    }
+
+    public void setBookWriter(String bookWriter) {
+        this.bookWriter = bookWriter;
+    }
+
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    public String getBookName() {
+        return bookName;
+    }
+
+    public int getBookPage() {
+        return bookPage;
+    }
+
+    public String getBookWriter() {
+        return bookWriter;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+}
