@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class Main {
+
+    public static void main(String[] args) {
+        List<Book> arrList = new ArrayList<>();
+
+        Book book1 = new Book("a",326,"a","05-08-2023");
+        Book book2 = new Book("b",126,"b","05-08-2023");
+        Book book3 = new Book("c",26,"c","05-08-2023");
+        Book book4 = new Book("d",86,"d","05-08-2023");
+        Book book5 = new Book("e",36,"e","05-08-2023");
+        Book book6 = new Book("f",324,"f","05-08-2023");
+        Book book7 = new Book("g",542,"g","05-08-2023");
+        Book book8 = new Book("h",100,"h","05-08-2023");
+        Book book9 = new Book("j",34,"j","05-08-2023");
+        Book book10 = new Book("k",565,"k","05-08-2023");
+
+        arrList.add(book1);
+        arrList.add(book2);
+        arrList.add(book3);
+        arrList.add(book4);
+        arrList.add(book5);
+        arrList.add(book6);
+        arrList.add(book7);
+        arrList.add(book8);
+        arrList.add(book9);
+        arrList.add(book10);
+
+        Map<String,String> bookList = arrList.stream().collect(Collectors.toMap(Book::getBookName, Book::getBookWriter));
+
+        List<Book> newBookList = arrList.stream().filter(book -> book.getBookPage()>100).collect(Collectors.toList());
+        
+
+
+    }
+}
+
